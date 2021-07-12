@@ -10,11 +10,13 @@ Local testing of this app can be performed by running `npm run sam-start`, which
 
 # Deploying
 
-To deploy, you'll need to add a `.env` file to the root of the project with two variables: `ARTIFACTS_BUCKET`, which specifies the S3 bucket to which the deploy script will upload your artifacts to, and `ENV` which specifies the environment you are deploying to.
+To deploy, you'll need to add a `.env` file to the root of the project with two variables: `ARTIFACTS_BUCKET`, which specifies the S3 bucket to which the deploy script will upload your artifacts to, and `ENV` which specifies the environment you are deploying to. If you don't already have an S3 bucket to deploy build artifacts to, you'll have to create one.
+
+Afterwards, run `npm run deploy`.
 
 The deployed stack will consist of an AWS::Lambda::Function, an AWS::ApiGateway::RestApi, and a variety of permission resources and stages.
 
-You'll need to have AWS credentials set up and the aws CLI installed to run this command successfully.
+You'll need to have AWS credentials set up and the aws CLI installed to successfully run the deploy script.
 
 # Using the Deployed API
 
