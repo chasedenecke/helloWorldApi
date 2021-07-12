@@ -1,0 +1,17 @@
+swagger: '2.0'
+info:
+  title: Hello World API
+  version: '1.0.0'
+produces:
+  - application/json
+basePath: /
+
+paths:
+  /helloWorld:
+    get:
+      summary: Returns hello world.
+      x-swagger-router-controller: helloWorld
+      operationId: sayHelloWorld
+      responses:
+        '200': # status code
+          description: 200 OK

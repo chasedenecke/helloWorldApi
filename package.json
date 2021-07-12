@@ -1,0 +1,24 @@
+{
+  "name": "serverlessapi",
+  "version": "1.0.0",
+  "description": "Serverless API for the homework project",
+  "main": "index.js",
+  "scripts": {
+    "start": "AWS_REGION=us-west-2 PORT=3001 nodemon app.local.js",
+    "sam-start": "sam local start-api -p 3001"
+  },
+  "author": "Chase Denecke",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "js-yaml": "^3.14.1",
+    "morgan": "^1.10.0",
+    "path": "^0.12.7",
+    "serverless-http": "^2.7.0",
+    "swagger-tools": "^0.10.4"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  }
+}
