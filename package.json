@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "AWS_REGION=us-west-2 PORT=3001 nodemon app.local.js",
+    "deploy": "./deploy.sh",
     "sam-start": "sam local start-api -p 3001"
   },
   "author": "Chase Denecke",
@@ -17,8 +18,5 @@
     "path": "^0.12.7",
     "serverless-http": "^2.7.0",
     "swagger-tools": "^0.10.4"
-  },
-  "devDependencies": {
-    "nodemon": "^2.0.12"
   }
 }
